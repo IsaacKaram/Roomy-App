@@ -13,6 +13,11 @@
 		CE27063D2415AAA200BC03BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE27063B2415AAA200BC03BE /* Main.storyboard */; };
 		CE27063F2415AAA300BC03BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE27063E2415AAA300BC03BE /* Assets.xcassets */; };
 		CE2706422415AAA300BC03BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2706402415AAA300BC03BE /* LaunchScreen.storyboard */; };
+		CE51DBB224170CE5002BE76F /* Noe-Display-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE51DBB124170CE5002BE76F /* Noe-Display-Bold.ttf */; };
+		CE51DBB424170EE0002BE76F /* Calibre-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE51DBB324170EE0002BE76F /* Calibre-Light.ttf */; };
+		CE51DBB624170F16002BE76F /* Calibre-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE51DBB524170F16002BE76F /* Calibre-Regular.otf */; };
+		CE51DBB824170F2C002BE76F /* CalibreMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE51DBB724170F2C002BE76F /* CalibreMedium.otf */; };
+		CE81859624170594005B3200 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81859524170594005B3200 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		CE27063E2415AAA300BC03BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE2706412415AAA300BC03BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE2706432415AAA300BC03BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE51DBB124170CE5002BE76F /* Noe-Display-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Noe-Display-Bold.ttf"; sourceTree = "<group>"; };
+		CE51DBB324170EE0002BE76F /* Calibre-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-Light.ttf"; sourceTree = "<group>"; };
+		CE51DBB524170F16002BE76F /* Calibre-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-Regular.otf"; sourceTree = "<group>"; };
+		CE51DBB724170F2C002BE76F /* CalibreMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CalibreMedium.otf; sourceTree = "<group>"; };
+		CE81859524170594005B3200 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		CE2706342415AAA200BC03BE /* Roomy */ = {
 			isa = PBXGroup;
 			children = (
+				CE81859724170835005B3200 /* Fonts */,
 				CE2706352415AAA200BC03BE /* AppDelegate.swift */,
 				CE2706392415AAA200BC03BE /* ViewController.swift */,
 				CE27063B2415AAA200BC03BE /* Main.storyboard */,
@@ -63,8 +74,20 @@
 				CE2706402415AAA300BC03BE /* LaunchScreen.storyboard */,
 				CE2706432415AAA300BC03BE /* Info.plist */,
 				CE1AFA452415C3F300A43465 /* RoundedButton.swift */,
+				CE81859524170594005B3200 /* TableViewController.swift */,
 			);
 			path = Roomy;
+			sourceTree = "<group>";
+		};
+		CE81859724170835005B3200 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CE51DBB124170CE5002BE76F /* Noe-Display-Bold.ttf */,
+				CE51DBB524170F16002BE76F /* Calibre-Regular.otf */,
+				CE51DBB724170F2C002BE76F /* CalibreMedium.otf */,
+				CE51DBB324170EE0002BE76F /* Calibre-Light.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +148,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE51DBB424170EE0002BE76F /* Calibre-Light.ttf in Resources */,
 				CE2706422415AAA300BC03BE /* LaunchScreen.storyboard in Resources */,
 				CE27063F2415AAA300BC03BE /* Assets.xcassets in Resources */,
 				CE27063D2415AAA200BC03BE /* Main.storyboard in Resources */,
+				CE51DBB224170CE5002BE76F /* Noe-Display-Bold.ttf in Resources */,
+				CE51DBB624170F16002BE76F /* Calibre-Regular.otf in Resources */,
+				CE51DBB824170F2C002BE76F /* CalibreMedium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +168,7 @@
 				CE27063A2415AAA200BC03BE /* ViewController.swift in Sources */,
 				CE2706362415AAA200BC03BE /* AppDelegate.swift in Sources */,
 				CE1AFA462415C3F300A43465 /* RoundedButton.swift in Sources */,
+				CE81859624170594005B3200 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
