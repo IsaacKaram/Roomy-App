@@ -46,11 +46,8 @@ extension RoomsController{
     
    private func hanleRoomsListResponse(rooms : [Room], error : Error?){
         self.rooms = rooms
-    RealmManager.saveRooms(rooms: rooms)
-    self.roomTableView.reloadData()
-//        DispatchQueue.main.async {
-//            
-//        }
+        RealmManager.saveRooms(rooms: rooms)
+        self.roomTableView.reloadData()
     }
     
     private func gotoRoomDescriotion(at index : Int){

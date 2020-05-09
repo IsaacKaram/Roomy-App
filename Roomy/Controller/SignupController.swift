@@ -10,7 +10,7 @@ import UIKit
 import NVActivityIndicatorView
 
 class SignupController: UIViewController {
-
+    
     //MARKS:- Outlets
     @IBOutlet private weak var txtUsername: UITextField!
     @IBOutlet private weak var txtEmail: UITextField!
@@ -31,7 +31,7 @@ class SignupController: UIViewController {
     
     
     @IBAction func signinClick(_ sender: Any) {
-    gotoSigninView()
+        gotoSigninView()
     }
     
 }
@@ -47,32 +47,32 @@ extension SignupController{
     }
     
     private func handleSignup(result : Result<Bool, Error>){
-     activityIndicator.stopAnimating()
-         switch result{
-         case.success(let success):
-             if success{
-               gotoRoomsView()
-             }else{
-               showAlert(title: "Signup Error", message: "Invalid inputs")
-             }
-         case.failure(_):
-             showAlert(title: "Signup Error", message: "there's problem, Please try again later!")
-         }
-         
-     }
-     
+        activityIndicator.stopAnimating()
+        switch result{
+        case.success(let success):
+            if success{
+                gotoRoomsView()
+            }else{
+                showAlert(title: "Signup Error", message: "Invalid inputs")
+            }
+        case.failure(_):
+            showAlert(title: "Signup Error", message: "there's problem, Please try again later!")
+        }
+        
+    }
+    
     private func gotoRoomsView(){
-         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-         let roomsView = storyboard.instantiateViewController(identifier: "RoomsController") as! RoomsController
-     roomsView.modalPresentationStyle = .fullScreen
-         self.present(roomsView, animated: true, completion: nil)
-         
-     }
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let roomsView = storyboard.instantiateViewController(identifier: "RoomsController") as! RoomsController
+        roomsView.modalPresentationStyle = .fullScreen
+        self.present(roomsView, animated: true, completion: nil)
+        
+    }
     
     private func gotoSigninView(){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let signinView = storyboard.instantiateViewController(identifier: "LoginController") as! LoginController
+        let signinView = storyboard.instantiateViewController(identifier: "LoginController") as! LoginController
         signinView.modalPresentationStyle = .fullScreen
-            self.present(signinView, animated: true, completion: nil)
+        self.present(signinView, animated: true, completion: nil)
     }
 }

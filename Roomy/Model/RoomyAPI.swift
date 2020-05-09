@@ -27,7 +27,7 @@ class RoomyAPI{
             "email" : email,
             "password" : password
         ]
-         sendLogin_SignupRequest(signupEndpoint, parameters, completion)
+        sendLogin_SignupRequest(signupEndpoint, parameters, completion)
     }
     
     fileprivate static func sendLogin_SignupRequest(_ loginEndpoint: URL, _ parameters: [String : String], _ completionHandler: @escaping (Result<Bool, Error>) -> Void) -> DataRequest {
