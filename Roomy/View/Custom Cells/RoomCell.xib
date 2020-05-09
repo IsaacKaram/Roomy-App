@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Calibri.ttf">
+            <string>Calibri</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RoomCell" rowHeight="197" id="KGk-i7-Jjw" customClass="RoomCell" customModule="Roomy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="197"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="197"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCJ-d9-boz">
+                        <rect key="frame" x="13" y="13" width="348" height="171"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHf-Lu-ezz">
+                                <rect key="frame" x="5" y="1" width="111.5" height="27"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Room Title">
+                                        <attributes>
+                                            <font key="NSFont" size="23" name="Calibre-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bc3-MA-c0L">
+                                <rect key="frame" x="290.5" y="8" width="52.5" height="27"/>
+                                <fontDescription key="fontDescription" name="NoeDisplay-Bold" family="Noe Display" pointSize="23"/>
+                                <color key="textColor" red="0.31372549020000001" green="0.3803921569" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="place" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHx-X6-GAa">
+                                <rect key="frame" x="5" y="35" width="39" height="19"/>
+                                <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="16"/>
+                                <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="CqC-V8-q8l">
+                                <rect key="frame" x="5" y="66" width="338" height="92"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 1.1" translatesAutoresizingMaskIntoConstraints="NO" id="YRc-tW-Fui">
+                                        <rect key="frame" x="0.0" y="0.0" width="81" height="92"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 1.2" translatesAutoresizingMaskIntoConstraints="NO" id="etE-zF-fTs">
+                                        <rect key="frame" x="86" y="0.0" width="80.5" height="92"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 1.3" translatesAutoresizingMaskIntoConstraints="NO" id="z2W-cL-IMO">
+                                        <rect key="frame" x="171.5" y="0.0" width="81" height="92"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 2.3" translatesAutoresizingMaskIntoConstraints="NO" id="bCz-Ab-vGh">
+                                        <rect key="frame" x="257.5" y="0.0" width="80.5" height="92"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="CqC-V8-q8l" firstAttribute="trailing" secondItem="bc3-MA-c0L" secondAttribute="trailing" id="3Eh-tA-tSJ"/>
+                            <constraint firstItem="CqC-V8-q8l" firstAttribute="top" secondItem="WHx-X6-GAa" secondAttribute="bottom" constant="12" id="4nv-kD-0mA"/>
+                            <constraint firstItem="CqC-V8-q8l" firstAttribute="leading" secondItem="jHf-Lu-ezz" secondAttribute="leading" id="6Fk-yR-HiG"/>
+                            <constraint firstItem="jHf-Lu-ezz" firstAttribute="top" secondItem="BCJ-d9-boz" secondAttribute="top" constant="1" id="APg-6K-DiA"/>
+                            <constraint firstItem="WHx-X6-GAa" firstAttribute="leading" secondItem="jHf-Lu-ezz" secondAttribute="leading" id="C2b-Yb-4N0"/>
+                            <constraint firstItem="jHf-Lu-ezz" firstAttribute="leading" secondItem="BCJ-d9-boz" secondAttribute="leading" constant="5" id="FXr-Io-F6V"/>
+                            <constraint firstItem="bc3-MA-c0L" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jHf-Lu-ezz" secondAttribute="trailing" constant="8" symbolic="YES" id="HdS-oM-4cp"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WHx-X6-GAa" secondAttribute="trailing" constant="20" symbolic="YES" id="RVw-vq-sJL"/>
+                            <constraint firstItem="bc3-MA-c0L" firstAttribute="top" secondItem="BCJ-d9-boz" secondAttribute="top" constant="8" id="Vxn-fb-z7g"/>
+                            <constraint firstAttribute="bottom" secondItem="CqC-V8-q8l" secondAttribute="bottom" constant="13" id="bjJ-oK-leq"/>
+                            <constraint firstAttribute="trailing" secondItem="bc3-MA-c0L" secondAttribute="trailing" constant="5" id="eH4-YR-Qgg"/>
+                            <constraint firstItem="WHx-X6-GAa" firstAttribute="top" secondItem="jHf-Lu-ezz" secondAttribute="bottom" constant="7" id="pxr-4y-Tgi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="BCJ-d9-boz" secondAttribute="trailing" constant="13" id="3KW-3Z-Hih"/>
+                    <constraint firstItem="BCJ-d9-boz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="RFY-t9-KPa"/>
+                    <constraint firstItem="BCJ-d9-boz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="k8w-g2-jDu"/>
+                    <constraint firstAttribute="bottom" secondItem="BCJ-d9-boz" secondAttribute="bottom" constant="13" id="qHb-Sn-ops"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="customBackgroundView" destination="BCJ-d9-boz" id="r1v-cV-MQx"/>
+                <outlet property="roomPlace" destination="WHx-X6-GAa" id="2TX-kL-fCs"/>
+                <outlet property="roomPrice" destination="bc3-MA-c0L" id="mhf-Uy-ljI"/>
+                <outlet property="roomTile" destination="jHf-Lu-ezz" id="Tv1-OB-clE"/>
+            </connections>
+            <point key="canvasLocation" x="113.04347826086958" y="101.45089285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Rectangle 1.1" width="74" height="92"/>
+        <image name="Rectangle 1.2" width="74" height="92"/>
+        <image name="Rectangle 1.3" width="74" height="92"/>
+        <image name="Rectangle 2.3" width="74" height="92"/>
+    </resources>
+</document>

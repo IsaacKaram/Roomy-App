@@ -52,7 +52,4 @@ class RoundedButton: UIButton {
             self.layer.shadowOffset = shadowOffset
         }
     }
-    
-
-
 }
