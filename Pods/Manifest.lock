@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (5.1.0)
+  - KeychainSwift (19.0.0)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - Realm (4.4.1):
+    - Realm/Headers (= 4.4.1)
+  - Realm/Headers (4.4.1)
+  - RealmSwift (4.4.1):
+    - Realm (= 4.4.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - KeychainSwift
+  - NVActivityIndicatorView
+  - RealmSwift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - KeychainSwift
+    - NVActivityIndicatorView
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  Realm: 4eb04d7487bd43c0581256f40b424eafb711deff
+  RealmSwift: 3eb8924ff7100df5928c7602f71d0fec51e7c9c5
+
+PODFILE CHECKSUM: 55ba839c89140a1f01cedf161256c4e1b4827f67
+
+COCOAPODS: 1.8.4
